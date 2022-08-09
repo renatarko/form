@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./14803715_Vector_2646.jpg);
+  background-repeat: no-repeat;
+  background-size: 150rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(32, 19, 56, 0.363);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  background-color: #f8effb;
+  color: rgb(55, 7, 78);
+  padding: 15px;
+}
+
+.form-control {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  color: #fffefe;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: flex;
+  border-radius: 7px;
+  font-size: 14px;
+  width: 90%;
+  padding: 10px;
+  margin-left: 20px;
+  outline: none;
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  visibility: hidden;
+}
+
+.container button {
+  width: 80%;
+  background-color: #5c2c74fe;
+  color: #f0f0f0;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #542969fe;
+  color: aliceblue;
+  transform: scalex(1.05);
+}
+
+/* Error or Success */
+.form-control.error small {
+  color: rgb(176, 7, 7);
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-color: rgb(176, 7, 7);
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: rgb(176, 7, 7);
+  visibility: visible;
+}
+
+.form-control.success input {
+  border-color: rgb(75, 134, 75);
+}
+
+.form-control.success i.fa-check-circle {
+  color: rgb(75, 134, 75);
+  visibility: visible;
+}
